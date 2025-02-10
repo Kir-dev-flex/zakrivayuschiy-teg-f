@@ -51,7 +51,7 @@
   margin: 102px auto;
   border: 2px solid var(--accent-color);
   padding: clamp(7.5rem, 6.9159rem + 2.4922vw, 8rem) clamp(0.875rem, -6.8645rem + 33.0218vw, 7.5rem);
-  text-align: center;;
+  text-align: center;
   background-color: var(--light-color);
   inline-size: clamp(23.4375rem, 0rem + 100vw, 43.5rem);
 }
@@ -212,7 +212,6 @@
   overflow: hidden;
   font-family: var(--accent-font), monospace;
   font-size: 14px;
-  inline-size: 100%;
   block-size: 38px;
   inline-size: clamp(18.3125rem, 20.941rem + -11.215vw, 16.0625rem);
 }
@@ -253,13 +252,11 @@
 
 @media (width <= 375px) {
   .save-button {
+    max-block-size: 85px;
     flex-direction: column;
   }
   .save-button__svg {
     min-block-size: 39px;
-  }
-  .save-button {
-    max-block-size: 85px;
   }
 }
 
@@ -267,9 +264,6 @@
 
 .animated-button {
   transition: box-shadow 0.3s ease;
-}
-
-.animated-button {
   position: relative;
   overflow: hidden;
 }
