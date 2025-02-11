@@ -350,7 +350,7 @@ button {
   border-color: var(--accent-color);
 }
 
-.sparks { 
+.sparks {
   opacity: 0;
 }
 
