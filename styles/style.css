@@ -153,7 +153,7 @@ button {
 
 .card__text {
   margin-block-end: 22px;
-  padding: 0 28px;
+  padding: 0 25px;
   font-size: 19px;
 }
 
@@ -173,7 +173,7 @@ button {
 }
 
 .card__like-button {
-  padding: 12px 37px;
+  padding: 11px 37px;
   max-inline-size: 130px;
 }
 
@@ -195,7 +195,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 37px 27px;
+  padding: 30px 27px;
 }
 
 .popup[open] {
@@ -230,6 +230,7 @@ button {
 
 .popup__button {
   padding: 10px;
+  text-transform: uppercase;
   inline-size: clamp(18.3125rem, 20.941rem + -11.215vw, 16.0625rem);
 }
 
@@ -273,6 +274,7 @@ button {
   }
   .save-button__svg {
     min-block-size: 28px;
+    min-inline-size: 28px;
   }
 }
 
@@ -342,6 +344,8 @@ button {
 }
 
 .card__icon-button {
+  padding: 0;
+  margin-inline-end: 4px;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
 }
@@ -382,18 +386,22 @@ button {
 
 .card__icon-button:active .core {
   fill: var(--sparks-color);
+  transition: fill 0.3s linear;
 }
 
 .card__icon-button:active .main-body {
   fill: var(--sparks-color);
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon.is-liked .core {
   fill: var(--sparks-color);
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--sparks-color);
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon.is-liked .contour {
